@@ -1,0 +1,19 @@
+stages:
+  - build
+  - test
+
+image: maven:latest
+
+build_a:
+  stage: build
+  script:
+    - echo "Compiling ...."
+    - mvn  compile
+
+
+test_a:
+  stage: test
+  script:
+    - echo "testing ..."
+    - mvn  test
+
