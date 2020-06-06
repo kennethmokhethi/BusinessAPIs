@@ -1,6 +1,6 @@
-import dao.DAO;
-import dto.UserDTO;
-import model.request.BondRequest;
+import com.businessapi.dao.DAO;
+import com.businessapi.dto.UserDTO;
+import com.businessapi.model.request.BondRequest;
 import org.hibernate.Transaction;
 import org.junit.BeforeClass;
 import org.junit.Test;

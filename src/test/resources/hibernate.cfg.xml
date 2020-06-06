@@ -20,8 +20,8 @@
         <property name="hibernate.c3p0.timeout">300</property>
         <property name="hibernate.c3p0.max_statements">50</property>
 
-        <mapping class="com.clientwebapp.entity.User"/>
-        <mapping class="com.clientwebapp.entity.Bond"/>
+        <mapping class="com.clientwebapp.com.businessapi.entity.User"/>
+        <mapping class="com.clientwebapp.com.businessapi.entity.Bond"/>
 
     </session-factory>
 </hibernate-configuration>

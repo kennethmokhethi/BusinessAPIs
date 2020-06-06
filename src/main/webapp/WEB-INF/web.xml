@@ -23,7 +23,7 @@
 
   <servlet>
     <servlet-name>Swagger Configuration</servlet-name>
-    <servlet-class>com.clientwebapp.swaggerconfig.SwaggerConfigurationServlet</servlet-class>
+    <servlet-class>com.clientwebapp.com.businessapi.swaggerconfig.SwaggerConfigurationServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
 

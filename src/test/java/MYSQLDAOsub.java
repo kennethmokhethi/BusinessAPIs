@@ -1,4 +1,4 @@
-import dao.MYSQLDAO;
+import com.businessapi.dao.MYSQLDAO;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
