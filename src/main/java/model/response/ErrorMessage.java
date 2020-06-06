@@ -2,16 +2,13 @@ package model.response;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-
-//Class which will catch and return errors in a json format
 @XmlRootElement
 public class ErrorMessage {
     private String errorMessage;
     private String errorMessageKey;
     private String href;
 
-    public ErrorMessage(String errorMessage,String errorMessageKey,String href)
-    {
+    public ErrorMessage(String errorMessage, String errorMessageKey, String href) {
         setErrorMessage(errorMessage);
         setErrorMessageKey(errorMessageKey);
         setHref(href);

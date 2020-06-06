@@ -3,7 +3,6 @@ package model.response;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 
-//Response class that will be sent back to the user
 @XmlRootElement
 public class UserProfileRest {
 
