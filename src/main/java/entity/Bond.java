@@ -3,7 +3,6 @@ package entity;
 import javax.persistence.*;
 import java.io.Serializable;
 
-
 @Entity
 @Table(name = "Bonds")
 public class Bond implements Serializable {
