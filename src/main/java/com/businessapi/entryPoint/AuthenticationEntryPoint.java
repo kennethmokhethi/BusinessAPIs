@@ -1,11 +1,11 @@
 package com.businessapi.entryPoint;
 
-import com.clientwebapp.dto.UserDTO;
-import com.clientwebapp.model.response.AuthenticationDetails;
-import com.clientwebapp.model.request.LoginCredentials;
+import com.businessapi.dto.UserDTO;
+import com.businessapi.model.response.AuthenticationDetails;
+import com.businessapi.model.request.LoginCredentials;
 
-import com.clientwebapp.servicepackage.AuthenticationService;
-import com.clientwebapp.servicepackage.serviceImpl.AuthenticationServiceImpl;
+import com.businessapi.service.AuthenticationService;
+import com.businessapi.service.serviceImpl.AuthenticationServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.SwaggerDefinition;
@@ -35,7 +35,6 @@ public class AuthenticationEntryPoint {
         String accessToken = authenticationService.issueAccessToken(authenticatedUser);
         returnValue.setId(authenticatedUser.getUserId());
         returnValue.setToken(accessToken);
-
       return returnValue;
     }
 
