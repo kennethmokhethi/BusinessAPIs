@@ -10,18 +10,16 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.springframework.beans.BeanUtils;
 
-
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MYSQLDAO {
+public class MYSQLDAO implements DAO {
 
     private static final SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
     public Session session = null;
-
 
 
     public Transaction getActiveTransaction() {

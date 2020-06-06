@@ -1,0 +1,4 @@
+CREATE SEQUENCE bond_id_seq
+    INCREMENT BY 1
+    START WITH 10000;
+commit;
